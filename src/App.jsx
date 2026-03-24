@@ -14,23 +14,41 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    title: "MPost (Posta Mkononi)",
+    desc: "Contributed to backend API development for Kenya’s digital postal platform, enabling mobile-number-based addressing, parcel tracking, and real-time SMS notifications.",
+    stack: ["Laravel", "PHP", "MySQL", "REST APIs", "SMS Integration"],
+    number: "00",
+  },
+  {
+  title: "Tendering System",
+  desc: "Built a secure tender management system for handling procurement workflows, including bid submissions, evaluations, and role-based approvals.",
+  stack: ["Django", "Django REST Framework", "MySQL", "Authentication", "Role-Based Access"],
+  number: "01",
+  },
+  {
     title: "School Management System",
     desc: "A comprehensive platform for managing students, teachers, timetables, and academic reports.",
     stack: ["Django", "React", "MySQL"],
-    number: "01",
+    number: "02",
   },
   {
     title: "Delivery App",
     desc: "Real-time parcel tracking Android app powered by Django Channels and WebSockets.",
     stack: ["Kotlin", "Django", "Firebase"],
-    number: "02",
+    number: "03",
   },
   {
     title: "POS System",
-    desc: "Bilingual point-of-sale solution with inventory management and detailed sales reports.",
-    stack: ["Django", "React", "MySQL"],
-    number: "03",
+    desc: "Bilingual point-of-sale system built with Laravel, featuring inventory management, sales tracking, and reporting tailored for small businesses.",
+    stack: ["Laravel", "PHP", "MySQL"],
+    number: "04",
   },
+  {
+  title: "Duty Free eCommerce Platform",
+  desc: "Developed a duty-free eCommerce platform using WordPress, featuring product catalog management, shopping cart, secure checkout, and order processing.",
+  stack: ["WordPress", "WooCommerce", "PHP", "MySQL"],
+  number: "02",
+}
 ];
 
 function Cursor() {
@@ -221,7 +239,7 @@ export default function Portfolio() {
             style={{ fontSize: "clamp(3.5rem, 10vw, 8rem)" }}
           >
             <span className="block">HELLO,</span>
-            <span className="block clip-text">I'M FELIX</span>
+            <span className="block clip-text">I'M FELIX KEGODE</span>
           </motion.h1>
 
           <motion.p
@@ -230,7 +248,8 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-slate-400 text-lg max-w-lg mb-10 leading-relaxed"
           >
-            Fullstack developer crafting powerful web & mobile experiences with Django, React & Kotlin.
+            Fullstack developer crafting powerful web & mobile experiences with React.js, Flutter, Django, APIs, and Cloud/DevOps technologies. Passionate about building scalable,
+            secure, and user-friendly applications that solve real-world problems..
           </motion.p>
 
           <motion.div
@@ -260,7 +279,7 @@ export default function Portfolio() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="relative z-10 flex gap-12 mt-20 border-t border-white/5 pt-8"
         >
-          {[["3+", "Years Exp."], ["20+", "Projects"], ["8", "Technologies"], ["100%", "Committed"]].map(([num, label]) => (
+          {[["5+", "Years Exp."], ["20+", "Projects"], ["8+", "Technologies"], ["100%", "Committed"]].map(([num, label]) => (
             <div key={label}>
               <div className="syne font-bold text-2xl text-sky-400">{num}</div>
               <div className="text-xs text-slate-500 tracking-wider mt-1">{label}</div>
@@ -296,20 +315,33 @@ export default function Portfolio() {
                   With deep expertise in Django, React, Kotlin, and Firebase, I bring a full-stack perspective to every challenge — from elegant UIs to high-performance APIs.
                 </p>
               </div>
-              <div className="md:col-span-2 space-y-3">
-                {[
-                  ["Backend", "Django · REST APIs · Docker"],
-                  ["Frontend", "React · Tailwind · Framer"],
-                  ["Mobile", "Kotlin · Android · Firebase"],
-                  ["Database", "MySQL · Firebase"],
-                  ["DevOps", "CI/CD · Docker · Linux"],
-                ].map(([title, desc]) => (
-                  <div key={title} className="border-glow p-4 hover:border-sky-400/40 transition-colors duration-300">
-                    <div className="text-xs text-sky-400 tracking-widest uppercase mb-1">{title}</div>
-                    <div className="text-sm text-slate-300">{desc}</div>
-                  </div>
-                ))}
-              </div>
+             <div className="md:col-span-2 space-y-3">
+  {[
+    ["Backend", "Django · Django REST Framework · REST APIs · Python · Node.js · Express · Authentication (JWT) · Microservices"],
+    
+    ["Frontend", "React · Next.js · Tailwind CSS · Framer Motion · HTML5 · CSS3 · JavaScript · Responsive Design"],
+    
+    ["Mobile", "Kotlin · Android SDK · Jetpack Compose · Firebase · MVVM Architecture · REST Integration · SQLite · Play Store Deployment"],
+    
+    ["Database", "MySQL · PostgreSQL · Firebase Realtime DB · Firestore · SQLite · Database Design · ORM (Django ORM) · Query Optimization"],
+    
+    ["DevOps", "CI/CD · Docker · Linux · Git & GitHub · GitHub Actions · Nginx · Kubernetes "],
+    
+    ["Cloud & Tools", "Firebase · Cloudinary · AWS (Basics) · Postman · VS Code · Jira"],
+    
+    ["Soft Skills", "Problem Solving · Team Collaboration · Agile/Scrum · Technical Mentorship · Communication · Debugging"],
+  ].map(([title, desc]) => (
+    <div
+      key={title}
+      className="border-glow p-4 hover:border-sky-400/40 transition-colors duration-300"
+    >
+      <div className="text-xs text-sky-400 tracking-widest uppercase mb-1">
+        {title}
+      </div>
+      <div className="text-sm text-slate-300">{desc}</div>
+    </div>
+  ))}
+</div>
             </div>
           </motion.div>
         </div>
@@ -499,8 +531,8 @@ export default function Portfolio() {
               className="space-y-4"
             >
               {[
-                { label: "Email", value: "your.email@example.com", href: "mailto:your.email@example.com" },
-                { label: "GitHub", value: "github.com/YOUR_USERNAME", href: "https://github.com/YOUR_GITHUB_USERNAME" },
+                { label: "Email", value: "felixkegode@gmail.com", href: "mailto:felixkegode@gmail.com" },
+                { label: "GitHub", value: "github.com/kegode", href: "https://github.com/kegode" },
                 { label: "CV", value: "Download Resume", href: "/cv.pdf" },
               ].map((item) => (
                 <a
@@ -538,8 +570,8 @@ export default function Portfolio() {
       <footer className="border-t border-white/5 py-10 px-8 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="syne font-black text-xl">F<span className="text-sky-400">.</span></span>
-          <span className="text-slate-600 text-xs tracking-widest uppercase">Built with React + Framer Motion</span>
-          <span className="text-slate-600 text-xs">© 2026 Felix. All rights reserved.</span>
+          {/* <span className="text-slate-600 text-xs tracking-widest uppercase">Built with React + Framer Motion</span> */}
+          <span className="text-slate-600 text-xs">© 2026. All rights reserved.</span>
         </div>
       </footer>
     </div>
