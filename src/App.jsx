@@ -533,7 +533,7 @@ export default function Portfolio() {
               {[
                 { label: "Email", value: "felixkegode@gmail.com", href: "mailto:felixkegode@gmail.com" },
                 { label: "GitHub", value: "github.com/kegode", href: "https://github.com/kegode" },
-                { label: "CV", value: "Download Resume", href: "/cv.pdf" },
+                { label: "CV", value: "Download Resume", href: "https://drive.google.com/file/d/1KBicY3oKbvKz7eomjYR0Y7BxxtBW9i6b/view?usp=drive_link" },
               ].map((item) => (
                 <a
                   key={item.label}
